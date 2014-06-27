@@ -60,7 +60,7 @@ download() {
 
 download_tcz() {
   local tcz=$1
-  local baseurl="$TINY_CORE_MIRROR_URL/tcz"
+  local baseurl="$MIRROR_URL/tcz"
   local extension="$baseurl/$tcz"
 
   download "$extension"
