@@ -66,8 +66,8 @@ download_tcz() {
   download "$extension"
   download "$extension.dep" || true
 
-  if [[ -f "$tcz.dep" ]]; then
-    for dep in $(cat $tcz.dep)
+  if [[ -f "$DOWNLOADS/$tcz.dep" ]]; then
+    for dep in $(cat $DOWNLOADS/$tcz.dep)
     do
       download_tcz $dep
     done
